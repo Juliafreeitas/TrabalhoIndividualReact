@@ -23,33 +23,36 @@ export default function Calculadora() {
     } else if (imc > 40) {
       setResultado("Você está acima do peso (obesidade extrema)");
     } else {
-      setResultado("-")
+      setResultado("-");
     }
   }
 
   return (
     <div>
       <form onSubmit={calcImc}>
-        <label>Digite seu peso </label> 
-
-        <input className="input"
-          type="text"
-          placeholder="Digite seu peso em kg"
+        <label>Digite seu peso: </label>
+        <input
+          className="input"
+          type="number"
+          placeholder="Digite seu peso em 'kg'"
           name="peso"
           onChange={(e) => setPeso(e.target.value)}
-        /> <br />
-
-        <label>Digite sua altura </label>
-
-        <input className="input"
+          required
+        />
+        <br />
+        <label>Digite sua altura: </label>
+        <input
+          className="input"
           type="text"
-          placeholder="Digite sua altura em m"
+          placeholder="Digite sua altura em 'm'"
           name="altura"
           onChange={(e) => setAltura(e.target.value)}
-        /> <br />
-
-        <button type="submit" className="botao">Calcular</button>
-
+          required
+        />
+        <br />
+        <button type="submit" className="botao">
+          Calcular
+        </button>
         <p>Resultado: {resultado}</p>
       </form>
     </div>
