@@ -5,17 +5,17 @@ import "./Estilo.css";
 export default function App() {
   return (
     <div>
-      <header>
+      <header className="cabecalho">
         <h1>Calculadora de IMC</h1>
         <h3>Indice de massa corporal</h3>
       </header>
-      <body>
+      <body className="corpo">
         <div className="calc">
           <Calculadora />
         </div>
       </body>
-      <footer>
-        <h4>Nome: Julia Costa Freitas</h4>
+      <footer className="rodape">
+        <h3>Nome: Julia Costa Freitas</h3>
       </footer>
     </div>
   );

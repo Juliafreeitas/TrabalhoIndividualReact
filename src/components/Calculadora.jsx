@@ -12,13 +12,13 @@ export default function Calculadora() {
 
     if (imc < 18.5) {
       setResultado("Você está abaixo do peso");
-    } else if (imc > 18.5 && imc < 24.9) {
+    } else if (imc >= 18.5 && imc < 24.9) {
       setResultado("Você está no peso ideal (eutrofia)");
-    } else if (imc > 25 && imc < 29.9) {
+    } else if (imc >= 25 && imc < 29.9) {
       setResultado("Você está acima do peso (sobrepeso)");
-    } else if (imc > 30 && imc < 34.9) {
+    } else if (imc >= 30 && imc < 34.9) {
       setResultado("Você está acima do peso (obesidade grau 1)");
-    } else if (imc > 35 && imc < 39.9) {
+    } else if (imc >= 35 && imc < 39.9) {
       setResultado("Você está acima do peso (obesidade grau 2)");
     } else if (imc > 40) {
       setResultado("Você está acima do peso (obesidade extrema)");
